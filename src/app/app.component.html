@@ -1,0 +1,40 @@
+<!-- Header -->
+<header class="bg-green-600 text-white p-4 shadow-md font-serif rounded-b-full">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <nav class="hidden md:flex space-x-10 text-base">
+      <ul class="flex space-x-10">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">Workout List</a></li>
+        <li><a href="#" class="hover:underline">Progress</a></li>
+      </ul>
+    </nav>
+    <legend class="text-2xl font-medium text-center flex-grow">
+      Health Tracker
+    </legend>
+    <div class="hidden md:block flex-grow"></div>
+  </div>
+  <div class="text-nowrap md:hidden mt-4 flex justify-center space-x-6 px-4">
+    <ul class="flex space-x-10">
+      <li>
+        <a routerLink="/workout-form" class="block text-base hover:underline">Home</a>
+      </li>
+      <li>
+        <a routerLink="/workout-list" class="block text-base hover:underline" onclick="return false;">Workout List</a>
+      </li>
+      <li>
+        <a routerLink="" class="block text-base hover:underline">Progress</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- Workout Form -->
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="bg-green-500 text-white p-3 font-serif font-base tracking-widest rounded-t-full">
+  <div class="max-w-7xl mx-auto text-center">
+    <label>&copy; 2024 Fyle Health Tracker. All rights reserved.</label>
+  </div>
+</footer>
